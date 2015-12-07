@@ -17,8 +17,32 @@ namespace XamarinPlayground.iOS
 		[Outlet]
 		UIKit.UIButton Button { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField TitleField { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField UrlField { get; set; }
+
+		[Action ("Button_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void Button_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (Button != null) {
+				Button.Dispose ();
+				Button = null;
+			}
+			if (TitleField != null) {
+				TitleField.Dispose ();
+				TitleField = null;
+			}
+			if (UrlField != null) {
+				UrlField.Dispose ();
+				UrlField = null;
+			}
 		}
 	}
 }
